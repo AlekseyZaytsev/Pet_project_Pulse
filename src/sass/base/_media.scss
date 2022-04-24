@@ -1,0 +1,110 @@
+@media (max-width:991px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: 575px;
+    }
+
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+    }
+
+    .header {
+        &__logo {
+            width: 200px;
+        }
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 15px;
+            }
+        }
+        &__phone {
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        &__logo {
+            margin-right: 20px;
+        }
+        &__contacts {
+            margin-top: 20px;
+            align-items: center;
+        }
+    }
+
+    .benefits {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        &__item {
+            margin-top: 20px;
+        }
+    }
+
+    .promo {
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__header {
+            text-align: center;
+            font-size: 30px;
+        }
+        &__subheader {
+            text-align: center;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width:410px) {
+    .container {
+        max-width: 310px;
+    }
+
+    .header {
+        flex-direction: column;
+
+        &__logo {
+            margin-bottom: 15px;
+        }
+        &__contacts {
+            margin-top: 15px;
+            align-items: center;
+        }
+    }
+
+    .promo {
+        &__icons {
+            justify-content: center;
+            width: 310px;
+        }
+    }
+
+}
