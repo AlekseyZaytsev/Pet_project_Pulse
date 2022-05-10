@@ -1,8 +1,8 @@
-var name = "Ivan";
-let number = 7;
-const pi = 3.14;
-number = 4;
-let leftBorderWidth = 200;
+// var name = "Ivan";
+// let number = 7;
+// const pi = 3.14;
+// number = 4;
+// let leftBorderWidth = 200;
 
 // alert(number);
 // console.log(number);
@@ -51,3 +51,40 @@ let leftBorderWidth = 200;
 // }
 
 // logging(3, 6);
+
+// $(document).ready(function(){
+//     $('.carousel__inner').slick({
+//         speed: 1500,
+//         // adaptiveHeight: true,
+//         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
+//         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
+//         responsive: [
+//             {
+//                 breakpoint: 992,
+//                 settings: {
+//                   slidesToShow: 1,
+//                   slidesToScroll: 1,
+//                   infinite: true,
+//                   dots: true
+//                 }
+//             }
+//         ]
+//     });
+// });
+
+const slider = tns({
+    container: '.carousel__inner',
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    controls: false,
+    nav: false
+  });
+
+document.querySelector('.prev').addEventListener('click', function () {
+    slider.goTo('prev');
+});
+
+document.querySelector('.next').addEventListener('click', function () {
+    slider.goTo('next');
+});
