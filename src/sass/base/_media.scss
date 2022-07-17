@@ -4,6 +4,7 @@
     }
 }
 
+
 @media (max-width:767px) {
     .container {
         max-width: 575px;
@@ -81,6 +82,10 @@
             align-items: center;
         }
     }
+
+    .catalog-item {
+        width: 50%;
+    }
 }
 
 @media (max-width:410px) {
@@ -106,5 +111,5 @@
             width: 310px;
         }
     }
-
+    
 }
