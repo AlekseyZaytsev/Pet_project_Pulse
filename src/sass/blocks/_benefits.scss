@@ -23,6 +23,15 @@
         font-size: 14px;
         line-height: 18px;
         color: #0D0D0D;
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
         img {
             height: 70px;
             width: 70px;
